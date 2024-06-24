@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Route to ...",
+    "version": "1.0",
+    "description": "Adds a context menu option to open a route to the selected location in Google Maps.",
+    "icons": {
+        "48": "src/assets/maps.svg"
+    },
+    "browser_action": {
+        "default_popup": "src/popup.html"
+    },
+    "permissions": ["contextMenus", "storage", "<all_urls>"],
+    "background": {
+        "scripts": ["src/background.js"]
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{7b219e92-4fc4-4d4d-b45c-f15536046818}"
+        }
+    }
+}
