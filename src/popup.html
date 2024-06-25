@@ -7,6 +7,13 @@
     <script src="popup.js" defer></script>
     <title>Popup</title>
     <style>
+        html,
+        body {
+            font-family: Arial;
+            color: #fff;
+            background-color: #161618;
+        }
+
         #addr {
             padding: 0.25rem;
             width: 250px;
@@ -20,7 +27,7 @@
 </head>
 
 <body>
-    <input type="text" id="addr" placeholder="Start address..." autofocus>
+    <input type="text" id="addr" placeholder="Enter a fixed default starting location" autofocus>
     <input type="button" id="save" value="Save">
 </body>
 
