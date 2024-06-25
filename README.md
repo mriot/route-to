@@ -2,12 +2,9 @@
 
 A Firefox extension that adds a context menu option to open a route to the selected location in Google Maps.
 
-## Build
+[Link to the extension](https://addons.mozilla.org/en-US/developers/addon/edf88207ee4c466c83b1/versions)
 
-Run
+## Build and release
 
-```bash
-web-ext build 
-```
-
-Then upload the zip file to [Mozilla Add-ons Developer Hub](https://addons.mozilla.org/en-US/developers/addons)
+- `web-ext build`
+- Then [submit the zip file](https://addons.mozilla.org/en-US/developers/addon/edf88207ee4c466c83b1/versions/submit/)
