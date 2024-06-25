@@ -1,9 +1,8 @@
 const $ = document.querySelector.bind(document);
 
 browser.storage.local.get("startAddress").then(({ startAddress }) => {
-    if (startAddress) {
-        $("#addr").value = startAddress;
-    }
+    if (!startAddress) return;
+    $("#addr").value = startAddress;
 });
 
 $("#save").addEventListener("click", async () => {
@@ -16,7 +15,6 @@ $("#save").addEventListener("click", async () => {
 });
 
 $("#addr").addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-        $("#save").click();
-    }
+    if (e.key !== "Enter") return;
+    $("#save").click();
 });

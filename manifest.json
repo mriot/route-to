@@ -6,10 +6,10 @@
     "icons": {
         "48": "src/assets/maps.svg"
     },
+    "permissions": ["contextMenus", "storage"],
     "browser_action": {
         "default_popup": "src/popup.html"
     },
-    "permissions": ["contextMenus", "storage", "<all_urls>"],
     "background": {
         "scripts": ["src/background.js"]
     },
