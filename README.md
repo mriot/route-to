@@ -9,7 +9,7 @@ Does not need any permissions.
 
 ## Installation
 
-Click on the latest release from the [releases page](/releases).
+Click on the latest release from the [releases page](https://github.com/mriot/route-to/releases/latest).
 
 Firefox will ask you to confirm the installation.
 
