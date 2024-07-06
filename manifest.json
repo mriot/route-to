@@ -4,7 +4,12 @@
     "version": "1.2.0",
     "description": "Adds a context menu option to open a route to the selected location in Google Maps.",
     "icons": {
-        "48": "src/assets/maps.svg"
+        "16": "src/assets/icon.png",
+        "32": "src/assets/icon.png",
+        "48": "src/assets/icon.png",
+        "128": "src/assets/icon.png",
+        "256": "src/assets/icon.png",
+        "512": "src/assets/icon.png"
     },
     "permissions": ["contextMenus", "storage"],
     "browser_action": {
@@ -15,7 +20,8 @@
     },
     "browser_specific_settings": {
         "gecko": {
-            "id": "{7b219e92-4fc4-4d4d-b45c-f15536046818}"
+            "id": "{7b219e92-4fc4-4d4d-b45c-f15536046818}",
+            "update_url": "https://riotcoding.com/addons/route-to/updates.json"
         }
     }
 }
