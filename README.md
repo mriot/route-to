@@ -36,8 +36,9 @@ Inspired by various similar extensions, though offering key improvements:
 
 [Link to the extension page](https://addons.mozilla.org/en-US/developers/addon/edf88207ee4c466c83b1/versions) (private)
 
-1. `web-ext build`
-2. [Submit the zip file](https://addons.mozilla.org/en-US/developers/addon/edf88207ee4c466c83b1/versions/submit/)
+1. `web-ext lint`
+2. `web-ext build`
+3. [Submit the zip file](https://addons.mozilla.org/en-US/developers/addon/edf88207ee4c466c83b1/versions/submit/)
 
 ---
 
