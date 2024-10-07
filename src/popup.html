@@ -5,30 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="popup.js" defer></script>
-    <title>Popup</title>
+    <title>Route to ...</title>
     <style>
         html,
         body {
-            font-family: Arial;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: #f0f0f0;
+            background-color: #2c2c2e;
+            margin-bottom: 1rem;
+        }
+
+        header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            font-size: 1.25rem;
             color: #fff;
-            background-color: #161618;
+            background-color: #3c3c3c;
         }
 
-        #addr {
-            padding: 0.25rem;
-            width: 250px;
+        header .logo {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.5rem;
         }
 
-        #save {
-            padding: 0.25rem;
+        header .github {
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            width: 1.25rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        input[type="text"] {
+            padding: 0.5rem;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #3a3a3c;
+            color: #fff;
+        }
+
+        input[type="text"]::placeholder {
+            color: #a9a9a9;
+        }
+
+        input[type="button"] {
+            padding: 0.5rem 1rem;
             cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <input type="text" id="addr" placeholder="Enter a fixed default starting location" autofocus>
-    <input type="button" id="save" value="Save">
+    <header>
+        <img src="assets/icon-48.png" alt="route-to-logo" class="logo">
+        <b>Route to...</b>
+        <a href="https://github.com/mriot/route-to" target="_blank" title="github.com/mriot/route-to"
+            rel="noopener noreferrer">
+            <img src=" assets/github.svg" alt="github logo" class="github">
+        </a>
+    </header>
+    <main>
+        <p>Enter a default starting point or leave blank for your current location.</p>
+        <section>
+            <input type="text" id="addr" placeholder="Using current location" autofocus>
+            <input type="button" id="save" value="Save">
+        </section>
+    </main>
 </body>
 
 </html>

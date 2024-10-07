@@ -1,12 +1,13 @@
 const $ = document.querySelector.bind(document);
 
-browser.storage.local.get("startAddress").then(({ startAddress }) => {
+chrome.storage.local.get("startAddress", ({ startAddress }) => {
     if (!startAddress) return;
     $("#addr").value = startAddress;
 });
 
 $("#save").addEventListener("click", async () => {
-    await browser.storage.local.set({ startAddress: $("#addr").value });
+    await chrome.storage.local.set({ startAddress: $("#addr").value });
+
     $("#addr").style.outline = "2px solid lime";
 
     setTimeout(() => {
